@@ -2,10 +2,10 @@
   "name": "udacity-c2-basic-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/server.ts",
   "scripts": {
     "test": "mocha -r ts-node/register src/**/*.tests.ts",
-    "dev": "ts-node-dev ./src/server.ts",
+    "dev": "ts-node-dev ./src/server.ts --watch",
     "tsc": "tsc"
   },
   "repository": {

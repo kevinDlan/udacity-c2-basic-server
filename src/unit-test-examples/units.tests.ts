@@ -1,4 +1,4 @@
-import { add, divide } from './units';
+import { add, divide, concat } from './units';
 
 import { expect } from 'chai';
 import 'mocha';
@@ -34,6 +34,22 @@ describe('divide', () => {
   });
 
 });
+
+describe('Concat Two string', () => {
+  it("shoud concat kevin and KONE",() =>{
+    const result = concat("kevin","KONE");
+    expect(result).to.equal("kevin KONE")
+  }
+  )
+    it("shoud concat Welcome and Sir", () => {
+      const result = concat("Welcome", "Sir");
+      expect(result).to.equal("Welcome Sir");
+    });
+      it("shoud concat Happy and today", () => {
+        const result = concat("Happy", "today");
+        expect(result).to.equal("Happy today");
+      });
+})
 
 // @TODO try creating a new describe block for the "concat" method
 // it should contain an it block for each it statement in the units.ts @TODO.

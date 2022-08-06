@@ -10,6 +10,11 @@ export const divide = (a: number, b: number) => {
     return a / b;
     }
 
+export const concat = (stringOne:string, stringTwo:string):string =>{
+    let value:string = stringOne + " " + stringTwo;
+    return value;
+}
+
 // @TODO try creating a method "concat" to concatenate two strings
 // it should take two string paramaters.
 // it should return one string combining the two strings.
